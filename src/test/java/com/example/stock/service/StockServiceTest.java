@@ -1,8 +1,7 @@
-package com.example.stock;
+package com.example.stock.service;
 
 import com.example.stock.domain.Stock;
 import com.example.stock.repository.StockRepository;
-import com.example.stock.service.StockService;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -20,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class StockServiceTest {
 
   @Autowired
-  private StockService stockService;
+  private PessimisticLockStockService stockService;
 
   @Autowired
   private StockRepository stockRepository;
